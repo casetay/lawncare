@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&E Lawn Care</title>
+    <style>
+        /* CSS Styles for the C&E Lawn Care Vibe */
+        :root {
+            --dark-green: #4a5434; /* Based on the back of the card */
+            --khaki: #d3cbaf;      /* Based on the wavy shapes on the front */
+            --cream: #f4f3ec;      /* Based on the background of the front */
+            --dark-text: #2c2c2c;
+            --light-text: #fdfdfd;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cream);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: var(--dark-green);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: var(--khaki);
+        }
+
+        /* Hero / Contact Banner */
+        .contact-banner {
+            background-color: var(--khaki);
+            color: var(--dark-green);
+            text-align: center;
+            padding: 1.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .contact-banner a {
+            color: var(--dark-green);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .contact-banner a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content & Services */
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--dark-green);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--khaki);
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 6px solid var(--dark-green);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: var(--dark-green);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .service-card ul {
+            list-style-type: none;
+            padding: 0;
